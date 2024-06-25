@@ -272,7 +272,8 @@ header{
 
 
 
-@media (width < 767px){
+@media (max-width: 767px) {
+    
     header{
         background: #eeeeee;
         background: linear-gradient(90deg,#eeeeee 0%, #a9a9a9 80%);
