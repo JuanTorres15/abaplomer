@@ -272,7 +272,7 @@ header{
 
 
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 767px){
     
     header{
         background: #eeeeee;
