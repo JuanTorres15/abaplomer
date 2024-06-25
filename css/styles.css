@@ -7,6 +7,12 @@ body{
     background-blend-mode: screen;
 }
 
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -367,7 +373,7 @@ header{
     }
 
     .fondoPresentacion{
-        width: 450px;
+        width: 430px;
         height: 300px;
         gap: 2rem;
     }
