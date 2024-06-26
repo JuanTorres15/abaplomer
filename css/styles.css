@@ -257,6 +257,75 @@ header{
     color: rgb(0, 0, 0);
 }
 
+.contenedor_padre{
+    border: 2px solid rgb(255, 0, 0);
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contenedor_hijo {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black; /* Borde alrededor de cada contenedor */
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    height: 350px;
+    width: 350px;
+}
+
+.imagen_servicio{
+    height: 100%;
+    width: 100%;
+    border: 10px;
+    border-color: #0004ff;
+    transition: transform 0.3s ease;
+}
+
+.contenedor_hijo:hover .imagen_servicio {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+.caracteristicas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    color: white; /* Color del texto */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transición para el texto */
+}
+
+.caracteristicas h5{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: italic;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.caracteristicas p{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: italic;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+.contenedor_hijo:hover .caracteristicas {
+    opacity: 1; /* Muestra el texto al pasar el ratón */
+}
+
 .footer{
     display: flex;
     flex-direction:row;
@@ -404,6 +473,12 @@ header{
         align-items: center;
         gap: 0.5rem;
     }
+
+    .contenedor_padre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
 
     main {
@@ -414,6 +489,8 @@ header{
     .menu-abierto main {
         padding-top: 14.6rem; /* Ajusta este valor según la altura del menú desplegable */
     }
+
+
 
     .footer{
         display: flex;
